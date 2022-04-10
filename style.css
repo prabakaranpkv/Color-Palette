@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.color-inputs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-inputs .palette-count select {
+  height: 34px;
+  margin: 4px;
+}
+
+.palette {
+  margin: 50px 20px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.palette .palette-item {
+  background-color: var(--palette-color);
+  height: 300px;
+  width: 150px;
+  border: 1px solid black;
+}
