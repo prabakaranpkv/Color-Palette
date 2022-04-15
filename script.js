@@ -15,12 +15,11 @@ function generatePalette(paletteCount) {
   paletteContainer.innerHTML = "";
 
   const colorsPalette = chroma
-    .scale(["#ffbaba", "#ff0000"])
+    .scale(["white", "red"])
     .mode("lch")
     .colors(paletteCount);
   colorsPalette.forEach((palette) => {
     const paletteItem = document.createElement("div");
-
     paletteItem.classList.add("palette-item");
     paletteItem.style.setProperty("--palette-color", palette);
     paletteContainer.appendChild(paletteItem);
